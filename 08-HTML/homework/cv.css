@@ -1,0 +1,103 @@
+header {
+    display: flexbox;
+    text-align: center;
+    background: darkseagreen;
+}
+
+header img {
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.diviciones {
+    margin-bottom: 10px;
+}
+
+#personales {
+    display: flex;
+    background: darkgoldenrod;
+}
+
+.lista {
+    display: flex;
+    padding: 5px;
+}
+
+.lista1 {
+    width: 40%px;
+    right: 0px;
+}
+
+.lista2 {
+    width: 68%;
+    right: 10px;
+}
+
+#unList2 {
+    list-style: none;
+}
+
+#educacion {
+    display: flex;
+    background: darkolivegreen;
+    padding-bottom: 5px;
+}
+
+.titulos {
+    width: 15%;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#experiencia {
+    display: flex;
+    background: firebrick;
+    padding-bottom: 5px;
+    color: white;
+}
+
+#habilidades {
+    display: flex;
+    background:lightblue;
+    padding-bottom: 5px;
+}
+
+#conocimientos {
+    display: flex;
+    background: darkgreen;
+    padding-bottom: 5px;
+    color: white;
+}
+
+#cursos{
+    display: flex;
+    background: lightgray;
+    padding-bottom: 5px;
+}
+
+#referencias{
+    display: flex;
+    background: dimgray;
+    padding-bottom: 5px;
+    color: white;
+}
+
+#expectativas{
+    display: flex;
+    background: sandybrown;
+    padding-bottom: 5px;
+    color: white;
+    vertical-align:middle;
+}
+
+#parrafo{
+    text-align: justify;
+    width: 80%;
+}
+
+
+
+
+
