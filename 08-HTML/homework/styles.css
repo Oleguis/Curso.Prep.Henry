@@ -1,0 +1,29 @@
+h1{
+    color: blue;
+}
+img{
+    width: 400px;
+}
+#thirdDiv{
+    display:inline-block;
+    align-content:space-between;
+    height: 600px;
+    width: 500px;
+    background: lightblue;
+    padding: 50px;
+    border: 2px solid darkblue;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}
+.classId{
+        display: flex;
+}
+body{
+    background-image: url("/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: beige;
+    text-align: center;
+    }
