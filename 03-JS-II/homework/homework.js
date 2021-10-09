@@ -22,9 +22,9 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if(status === 1) {return 'OnLine'};
-  else if (status === 2) {return 'Away'};
-  return 'OffLine';
+  if(status === 1) return 'Online';
+  else if (status === 2) return 'Away';
+  else {return 'Offline'};
 }
 
 function saludo(idioma) {
@@ -59,7 +59,7 @@ function colors(color) {
     case 'red':
     case 'green':
     case 'orange':
-      return `This is $[color]`;
+      return `This is ${color}`;
     default:
       return 'Color not found';
   }
@@ -97,7 +97,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 3 === 0 && numero % 5 === 0) return 'fizbuzz';
+  if (numero % 3 === 0 && numero % 5 === 0) return 'fizzbuzz';
   else if (numero % 3 === 0) return 'fizz';
   else if (numero % 5 === 0) return 'buzz';
   else return numero;
@@ -111,9 +111,9 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if (num1 < 0 || num2 < 0 || num3 < 0) return 'Hay negativos';
-  else if (num1 = 0 || num2 = 0 || num3 = 0) return 'Error';
+  else if (num1 === 0 || num2 === 0 || num3 === 0) return 'Error';
   else if (num1 > num2 && num1 > num3) return 'Número 1 es mayor y positivo';
-  else if (num3 > num1 && num3 > num2) return num3++;
+  else if (num3 > num1 && num3 > num2) return (num3 + 1);
   else return false;
 }
 
@@ -146,7 +146,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
   var tablaDelSeis = [];
-  for ( i = 1; i <= 10; i++){
+  for ( i = 0; i <= 10; i++){
     console.log(i + ' * 6 = '+ i*6);
     tablaDelSeis.push(i*6);
   }

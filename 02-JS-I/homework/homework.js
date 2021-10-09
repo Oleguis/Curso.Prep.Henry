@@ -146,9 +146,9 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  let string = "Es positivo";
-  if (numero < 0) string = "Es negativo";
-  return string;
+  if (numero < 0) return "Es negativo";
+  else if (numero > 0) return "Es positivo";
+  else return false;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -214,11 +214,11 @@ function esVocal(letra){
 }
 
 
-function esPositivo(numero){
-  let mensaje = 'Es positivo';
-  if(numero < 0) mensaje = 'Es Negativo';
-  return mensaje;
-} 
+// function esPositivo(numero){
+//   let mensaje = 'Es positivo';
+//   if(numero < 0) mensaje = 'Es Negativo';
+//   return mensaje;
+// } 
 
 // No modificar nada debajo de esta línea
 // --------------------------------
