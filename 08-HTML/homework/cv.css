@@ -1,17 +1,14 @@
 body{
-    display:block;
     padding: 0;
     margin: 0;
-    border: 1em solid lightslategray;
+    border: 0.5em solid lightslategray;
     background-color: lightyellow;
 }
 
 
 header {
-    display: flexbox;
+    background: lightyellow;
     text-align: center;
-    padding: 0;
-    margin: 0;
 }
 
 header img {
@@ -24,8 +21,8 @@ header img {
 }
 
 .diviciones {
-    margin-bottom: 10px;
-    border: 2px solid lightslategrey;
+    margin: 5px;
+    border: 2px solid black;
 }
 
 #personales {
@@ -48,7 +45,7 @@ header img {
 
 #experiencia {
     display: flex;
-    background: firebrick;
+    background: linear-gradient( 90deg, firebrick, #ff4400);
     padding-bottom: 5px;
     color: white;
 }
@@ -64,7 +61,7 @@ header img {
     padding-bottom: 5px;
 }
 
-#habilidades p {
+#habilidades > p {
     margin-right: 50px;
     text-align: justify;
 }
@@ -72,9 +69,9 @@ header img {
 
 #conocimientos {
     display: flex;
-    background: darkgreen;
+    background: linear-gradient(75deg, darkgreen, #00ff00);
     padding-bottom: 5px;
-    color: white;
+    color: yellow;
 }
 
 #cursos{
@@ -85,9 +82,9 @@ header img {
 
 #referencias{
     display: flex;
-    background: dimgray;
+    background: linear-gradient( 75deg, dimgray, lightgrey);
     padding-bottom: 5px;
-    color: white;
+    color: cyan;
 }
 
 #expectativas{
@@ -121,8 +118,12 @@ blockquote{
     width: 200px;
 }
 
-.liDos{
+#unList2, .liDos{
     list-style: none;
+}
+
+b{
+    font-size: 1.2em;
 }
 
 
